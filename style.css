@@ -15,8 +15,6 @@ body {
 }
 
 .block {
-    /* margin-left: -1px;
-    margin-top: -1px; */
     border: 1px solid;
     border-bottom: 0px;
     border-right: 0px;

@@ -7,14 +7,17 @@ let blockSizeCSS = blockSize + 'px';
 console.log(blockSize);
 console.log(blockSizeCSS);
 
-// set up grid
+// Set up grid
 for (let i = 0; i < blockNumber; i++) {
     const block = document.createElement('div');
     block.classList.add('block');
     block.style.cssText = `width: ${blockSizeCSS}; height: ${blockSizeCSS}`;
+
+    // Add right border to last block of each row
     if ((i+1) % blockInput == 0) {
         block.style.borderRight= '1px solid';
     }
+    // Add bottom border to each block in the bottom row
     if (i >= blockNumber - blockInput) {
         block.style.borderBottom = '1px solid';
     }
