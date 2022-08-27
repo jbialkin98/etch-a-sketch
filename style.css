@@ -16,7 +16,7 @@ body {
 .block {
     margin-left: -1px;
     margin-top: -1px;
-    border: 1px solid; width: 100px; height: 100px;
+    border: 1px solid;
     border-bottom: 0px;
     box-sizing: border-box;
 }
