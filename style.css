@@ -7,6 +7,7 @@ body {
 .container {
     display: flex;
     flex-wrap: wrap;
+    flex-shrink: 0;
     justify-content: center;
     align-self: center;
     width: 800px;
@@ -14,9 +15,10 @@ body {
 }
 
 .block {
-    margin-left: -1px;
-    margin-top: -1px;
+    /* margin-left: -1px;
+    margin-top: -1px; */
     border: 1px solid;
     border-bottom: 0px;
+    border-right: 0px;
     box-sizing: border-box;
 }
