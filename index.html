@@ -7,10 +7,24 @@
         <script src="js-file.js" defer></script>
     </head>
     <body>
-        <h1>Etch-a-Sketch</h1>
-        <div class="container"></div>
-        <p>Enter desired width of grid:</p>
-        <input name="gridSize" type="text" id="gridSize">
-        <button class="submit">Submit</button>
+        <div class="etch-a-sketch">
+            <div class="top">
+                <span id="magic">Magic</span> 
+                <h1>Etch-a-Sketch </h1>
+                <span id="screen">Screen</span>
+            </div>
+            <div class="container"></div>
+            <div class="bottom">
+                <div class="circle" id="leftCircle"></div>
+                <div class="customizeGrid">
+                    <div>
+                        Enter desired width of grid:
+                        <input name="gridSize" type="text" id="gridSize">
+                    </div>
+                    <button class="submit">Submit</button>
+                </div>
+                <div class="circle" id="rightCircle"></div>
+            </div>
+        </div>
     </body>
 </html>

@@ -5,7 +5,7 @@ gridSetup(blockInput);
 
 function gridSetup(blockInput) {
     let blockNumber = Math.pow(blockInput, 2);
-    let blockSize = Math.floor((800 / blockInput) * 100) / 100;
+    let blockSize = Math.floor((600 / blockInput) * 100) / 100;
     let blockSizeCSS = blockSize + 'px';
 
     for (let i = 0; i < blockNumber; i++) {

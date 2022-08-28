@@ -2,6 +2,26 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: 'Apple Chancery';
+}
+
+.etch-a-sketch {
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 825px;
+    height: 825px;
+    margin: 10px;
+}
+
+.top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: yellow;
+    gap: 20px;
+    margin-top: 10px;
 }
 
 .container {
@@ -10,8 +30,39 @@ body {
     flex-shrink: 0;
     justify-content: center;
     align-self: center;
-    width: 800px;
-    height: 800px;
+    width: 600px;
+    height: 600px;
+    background-color: white;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'American Typewriter';
+    color: yellow;
+}
+
+.customizeGrid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.submit {
+    width: 100px;
+    height: 25px;
+    font-family: 'American Typewriter';
+    background-color: lightblue;
+}
+
+.circle {
+    background: lightblue;
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    margin: 20px;
 }
 
 .block {
