@@ -50,7 +50,12 @@ body {
     gap: 20px;
 }
 
-.submit {
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.button {
     width: 100px;
     height: 25px;
     font-family: 'American Typewriter';

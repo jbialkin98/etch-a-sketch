@@ -34,8 +34,11 @@ function sketching() {
 }
 
 let gridWidth = document.querySelector('#gridSize');
-const submitButton = document.querySelector('.submit');
+const submitButton = document.querySelector('#submit');
 submitButton.addEventListener('click', () => submitClicked());
+
+const clearButton = document.querySelector('#clear');
+clearButton.addEventListener('click', () => clearClicked());
 
 function deleteGrid() {
     const blocks = document.querySelectorAll('.block');
@@ -44,11 +47,16 @@ function deleteGrid() {
 
 function submitClicked() {
     let userText = document.getElementById('gridSize').value;
-    let blockInput = parseFloat(userText);
+    blockInput = parseFloat(userText);
     if (blockInput >= 8 && blockInput <= 100 && Number.isInteger(blockInput)) {
         deleteGrid();
         gridSetup(blockInput);
     } else {
         alert("Please enter a valid number between 8 and 100");
     }
+}
+
+function clearClicked() {
+    deleteGrid();
+    gridSetup(blockInput);
 }
