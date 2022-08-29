@@ -7,6 +7,7 @@ body {
 
 .etch-a-sketch {
     background-color: red;
+    border-radius: 25px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
