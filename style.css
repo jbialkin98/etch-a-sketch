@@ -22,6 +22,7 @@ body {
     color: yellow;
     gap: 20px;
     margin-top: 10px;
+    font-size: 16px;
 }
 
 .container {
@@ -40,6 +41,7 @@ body {
     justify-content: space-between;
     font-family: 'American Typewriter';
     color: yellow;
+    font-size: 18px;
 }
 
 .customizeGrid {
@@ -53,6 +55,7 @@ body {
 .buttons {
     display: flex;
     gap: 10px;
+    text-align: center;
 }
 
 .button {

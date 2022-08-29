@@ -27,9 +27,14 @@ function gridSetup(blockInput) {
 }
 
 function sketching() {
+    let originalHSL = 90;
+
     const blocks = document.querySelectorAll('.block');
     blocks.forEach(blocks => blocks.addEventListener('mouseover', function (e) {
-        e.target.style.background = 'gray';
+        //e.target.style.background = 'gray';
+
+        e.target.style.background = `hsl(0, 0%, ${originalHSL}%)`;
+        originalHSL -= 10;
     }));
 }
 
@@ -60,3 +65,4 @@ function clearClicked() {
     deleteGrid();
     gridSetup(blockInput);
 }
+
